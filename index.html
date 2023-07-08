@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<style>
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+/* Header styles */
+header {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 0;
+}
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+header nav ul li {
+margin-right: 10px;
+}
+header nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+/* Main content styles */
+main {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+}
+main section {
+flex: 1;
+padding: 20px;
+}
+/* About section styles */
+main section#about {
+background-color: #f1f1f1;
+}
+main section#about h1 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+/* Projects section styles */
+main section#projects {
+background-color: #f1f1f1;
+}
+main section#projects h1 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+main section#projects ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+main section#projects ul li {
+margin-bottom: 10px;
+}
+/* Contact section styles */
+main section#contact {
+background-color: #f1f1f1;
+}
+main section#contact h1 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+main section#contact form label {
+display: block;
+margin-bottom: 10px;
+}
+main section#contact form input[type="text"],
+main section#contact form input[type="email"],
+main section#contact form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+box-sizing: border-box;
+}
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+footer p {
+margin: 0;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+main {
+flex-direction: column;
+}
+main section {
+width: 100%;
+padding: 10px;
+}
+}
+</style>
+</head>
+<body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+// Get the "Project 1" link
+var project1Link = document.querySelector("main section#projects ul li:first-child a");
+// Set the link's href to the desired URL
+project1Link.href = "https://gocoding.org/how-to-generate-an-api-key-for-chatgpt/";
+});
+</script>
+<header>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="about">
+<h1>About Me</h1>
+<p>My name is PRERANA INGALE and I am a web developer. I have experience building websites and web applications using HTML, CSS, and JavaScript. I am passionate about creating beautiful, user-friendly designs and am always eager to learn new skills and technologies.Also i love travelling and cook tradishonal dishes</p>
+</section>
+<section id="projects">
+<h1>My Projects</h1>
+<ul>
+<li><a href="#">Project 1</a></li>
+<li><a href="#">Project 2</a></li>
+<li><a href="#">Project 3</a></li>
+</ul>
+</section>
+<section id="contact">
+<h1>Contact Me</h1>
+<form action="/submit-form" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+<input type="submit" value="Submit">
+</form>
+</section>
+</main>
+<footer>
+<p>Copyright © 2023My Portfolio</p>
+</footer>
+</body>
+</html>
